@@ -2,8 +2,9 @@ package main
 
 import (
 	"flag"
+	"fmt"
 
-	_ "github.com/neimv/backend-go-leo/color"
+	utils "github.com/neimv/backend-go-leo/utilities"
 )
 
 var (
@@ -12,5 +13,6 @@ var (
 )
 
 func main() {
-	color.Colorize("Starting server")
+	fmt.Println("Hello")
+	utils.PrintBlue("Starting WebServer")
 }

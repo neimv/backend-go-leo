@@ -1,3 +1,3 @@
-module backend_go_leo
+module github.com/neimv/backend-go-leo
 
 go 1.16
