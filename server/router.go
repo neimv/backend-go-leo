@@ -12,7 +12,7 @@ func NewRouter() *Router {
 	}
 }
 
-func (r *Router) FindHandler(path string, method string) {
+func (r *Router) FindHandler(path string, method string) (http.HandlerFunc, bool, bool) {
 	_, exists := r.rules[path]
 	handler, methodExist := r.rules[path][method]
 
